@@ -19,6 +19,8 @@ The development server runs at `http://localhost:5173`.
 - Reviewer/admin review queue with task-rubric scoring, feedback and decisions.
 - Public read-only view for expiring scoped profile shares.
 - Founder/admin scoped brief creation, AI draft generation, publication, invitations, and submission comparison; student invitation responses and team formation/submission comparison.
+- Student talent-board consent and authorized reviewer/mentor candidate search; mutually agreed resource swaps.
+- Founder/admin opportunity drafts and application review; admin task drafting, editing, publication, and archival.
 
 Review decisions, verification warnings, matches, and AI suggestions reflect the backend's documented limitations. In particular, completeness checks do not prove authorship, match scores are not job probabilities, and sample AI content is not live-generated output.
 
@@ -29,4 +31,4 @@ npm run build
 npm run preview
 ```
 
-See the Backend repository's `docs/API_CONTRACT.md` for route definitions and role requirements. Talent-board search, resource swaps, and opportunity administration do not currently have dedicated frontend screens. Candidate invitations use a recipient account ID because the current API does not provide a recipient lookup flow in the founder workspace.
+See the Backend repository's `docs/API_CONTRACT.md` for route definitions and role requirements. Candidate and resource-swap invitations use recipient account IDs because the API does not provide a general recipient lookup flow. The user interface is API-wired, but a browser session against a configured API and MongoDB is still needed to verify live role-specific workflows.
