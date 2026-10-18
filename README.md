@@ -24,7 +24,7 @@ Deploy `Backend` as a separate Vercel project and configure its production envir
 - Dashboard, evidence profile, user projects, limited profile shares, task submission history, trial tasks, Idea Lab and opportunity matching/applications.
 - Reviewer/admin review queue with task-rubric scoring, feedback and decisions.
 - Public read-only view for expiring scoped profile shares.
-- Founder/admin scoped brief creation, AI draft generation, publication, invitations, and submission comparison; student invitation responses and team formation/submission comparison.
+- Founder workspace for creating public student tasks, managing scoped briefs and opportunities, and tracking applicant activity; founder-created task submissions appear in the student's My submissions page. Admins retain separate task management; student invitation responses and team formation/submission comparison remain available.
 - Student talent-board consent and authorized reviewer/mentor candidate search; mutually agreed resource swaps.
 - Founder/admin opportunity drafts and application review; admin task drafting, editing, publication, and archival.
 
