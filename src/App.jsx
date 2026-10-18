@@ -2,7 +2,7 @@ import React,{createContext,useContext,useEffect,useState} from 'react';
 import {BrowserRouter,Link,NavLink,Navigate,Outlet,Route,Routes,useNavigate} from 'react-router-dom';
 import {Activity,ArrowRight,ArrowUpRight,Award,BriefcaseBusiness,Check,ChevronRight,FileCheck2,FlaskConical,Gauge,Lightbulb,LogOut,Menu,Plus,ShieldCheck,Sparkles,Target,Users} from 'lucide-react';
 import api from './services/api';
-import {AdminTasks,AdminUserAccess,AppealQueue,Briefs,DashboardSummary,IdeasWorkspace,InvitationsTeams,MySubmissions,OpportunityAdmin,ProfileWorkspace,Projects,ResourceSwaps,Reviews,Sharing,SharedProfile,TalentBoard} from './Workspace';
+import {AdminTasks,AdminUserAccess,AppealQueue,Briefs,DashboardSummary,IdeasWorkspace,InvitationsTeams,MySubmissions,OpportunityAdmin,ProfileWorkspace,Projects,ResourceSwaps,Reviews,Sharing,SharedProfile,TalentBoard} from './Workspace.jsx';
 const Auth=createContext(null),useAuth=()=>useContext(Auth);
 const Button=({children,secondary=false,...props})=><button className={`button ${secondary?'secondary':''}`} {...props}>{children}</button>;
 const Chip=({children})=><span className="chip">{children}</span>;
