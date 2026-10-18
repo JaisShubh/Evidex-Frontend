@@ -12,6 +12,12 @@ React + Vite client for the EVIDEX API. The UI uses persisted API data; AI analy
 
 The development server runs at `http://localhost:5173`.
 
+## Vercel deployment
+
+Deploy `Frontend` as the Vercel project root. Production builds use the same-origin `/api` route, which `vercel.json` proxies to `https://evidex-backend.vercel.app`. If the backend is deployed under a different hostname, update that rewrite destination. Keep `VITE_API_BASE_URL` unset for this proxy setup; use it only when intentionally targeting another API.
+
+Deploy `Backend` as a separate Vercel project and configure its production environment variables (`GEMINI_API_KEY`, `GEMINI_MODEL`, `MONGODB_URI`, and `JWT_SECRET`) in Vercel. Redeploy after changing environment variables. The Gemini key must only be configured on the backend and must never use a `VITE_` prefix.
+
 ## Implemented screens
 
 - Public landing page and account sign-in/registration.
